@@ -14,6 +14,7 @@
 		5FF2AD711AA45CF60092F66C /* CustomTransitionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF2AD701AA45CF60092F66C /* CustomTransitionsTests.swift */; };
 		5FF2AD7D1AA467630092F66C /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF2AD7C1AA467630092F66C /* ActionViewController.swift */; };
 		AB62B5941C24158600D3DBE5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB62B5931C24158600D3DBE5 /* Images.xcassets */; };
+		AB62B5961C243BA100D3DBE5 /* CustomPresentAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB62B5951C243BA100D3DBE5 /* CustomPresentAnimationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		5FF2AD701AA45CF60092F66C /* CustomTransitionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransitionsTests.swift; sourceTree = "<group>"; };
 		5FF2AD7C1AA467630092F66C /* ActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		AB62B5931C24158600D3DBE5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AB62B5951C243BA100D3DBE5 /* CustomPresentAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentAnimationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				5FF2AD581AA45CF60092F66C /* Supporting Files */,
 				5FF2AD7C1AA467630092F66C /* ActionViewController.swift */,
 				5FACF6631AA5AEBF009C6C88 /* ItemsTableViewController.swift */,
+				AB62B5951C243BA100D3DBE5 /* CustomPresentAnimationController.swift */,
 			);
 			path = CustomTransitions;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FF2AD7D1AA467630092F66C /* ActionViewController.swift in Sources */,
+				AB62B5961C243BA100D3DBE5 /* CustomPresentAnimationController.swift in Sources */,
 				5FF2AD5B1AA45CF60092F66C /* AppDelegate.swift in Sources */,
 				5FACF6641AA5AEBF009C6C88 /* ItemsTableViewController.swift in Sources */,
 			);

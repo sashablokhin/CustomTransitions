@@ -8,8 +8,21 @@
 
 import UIKit
 
-class ItemsTableViewController: UITableViewController {
+class ItemsTableViewController: UITableViewController, UIViewControllerTransitioningDelegate {
+    
+    let customPresentAnimationController = CustomPresentAnimationController()
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showAction" {
+            let toViewController = segue.destinationViewController as UIViewController
+            toViewController.transitioningDelegate = self
+        }
+    }
+    
+    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return customPresentAnimationController
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

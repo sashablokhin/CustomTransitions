@@ -49,7 +49,7 @@
                     <navigationItem key="navigationItem" id="i1V-S6-RN9">
                         <barButtonItem key="rightBarButtonItem" title="Action" id="32s-dO-oKd">
                             <connections>
-                                <segue destination="Pge-vv-QYj" kind="presentation" id="cjy-T4-q97"/>
+                                <segue destination="Pge-vv-QYj" kind="presentation" identifier="showAction" id="cjy-T4-q97"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
