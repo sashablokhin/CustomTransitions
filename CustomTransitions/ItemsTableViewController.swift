@@ -11,6 +11,7 @@ import UIKit
 class ItemsTableViewController: UITableViewController, UIViewControllerTransitioningDelegate {
     
     let customPresentAnimationController = CustomPresentAnimationController()
+    let customDismissAnimationController = CustomDismissAnimationController()
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showAction" {
@@ -21,6 +22,10 @@ class ItemsTableViewController: UITableViewController, UIViewControllerTransitio
     
     func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return customPresentAnimationController
+    }
+    
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return customDismissAnimationController
     }
     
     override func viewDidLoad() {

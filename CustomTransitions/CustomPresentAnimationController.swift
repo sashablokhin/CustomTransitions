@@ -3,7 +3,7 @@
 //  CustomTransitions
 //
 //  Created by Alexander Blokhin on 18.12.15.
-//  Copyright © 2015 Appcoda. All rights reserved.
+//  Copyright (c) 2015 Alexander Blokhin. All rights reserved.
 //
 
 import UIKit
