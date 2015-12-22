@@ -8,10 +8,11 @@
 
 import UIKit
 
-class ItemsTableViewController: UITableViewController, UIViewControllerTransitioningDelegate {
+class ItemsTableViewController: UITableViewController, UIViewControllerTransitioningDelegate, UINavigationControllerDelegate {
     
     let customPresentAnimationController = CustomPresentAnimationController()
     let customDismissAnimationController = CustomDismissAnimationController()
+    let customNavigationAnimationController = CustomNavigationAnimationController()
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showAction" {
@@ -28,9 +29,15 @@ class ItemsTableViewController: UITableViewController, UIViewControllerTransitio
         return customDismissAnimationController
     }
     
+    func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        customNavigationAnimationController.reverse = operation == .Pop
+        return customNavigationAnimationController
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        navigationController?.delegate = self
     }
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {

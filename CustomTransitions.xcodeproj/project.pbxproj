@@ -16,6 +16,7 @@
 		AB62B5941C24158600D3DBE5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB62B5931C24158600D3DBE5 /* Images.xcassets */; };
 		AB62B5961C243BA100D3DBE5 /* CustomPresentAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB62B5951C243BA100D3DBE5 /* CustomPresentAnimationController.swift */; };
 		AB62B5981C28404800D3DBE5 /* CustomDismissAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB62B5971C28404800D3DBE5 /* CustomDismissAnimationController.swift */; };
+		AB62B59A1C2849F400D3DBE5 /* CustomNavigationAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB62B5991C2849F400D3DBE5 /* CustomNavigationAnimationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		AB62B5931C24158600D3DBE5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AB62B5951C243BA100D3DBE5 /* CustomPresentAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentAnimationController.swift; sourceTree = "<group>"; };
 		AB62B5971C28404800D3DBE5 /* CustomDismissAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDismissAnimationController.swift; sourceTree = "<group>"; };
+		AB62B5991C2849F400D3DBE5 /* CustomNavigationAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationAnimationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				5FACF6631AA5AEBF009C6C88 /* ItemsTableViewController.swift */,
 				AB62B5951C243BA100D3DBE5 /* CustomPresentAnimationController.swift */,
 				AB62B5971C28404800D3DBE5 /* CustomDismissAnimationController.swift */,
+				AB62B5991C2849F400D3DBE5 /* CustomNavigationAnimationController.swift */,
 			);
 			path = CustomTransitions;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				AB62B5961C243BA100D3DBE5 /* CustomPresentAnimationController.swift in Sources */,
 				5FF2AD5B1AA45CF60092F66C /* AppDelegate.swift in Sources */,
 				5FACF6641AA5AEBF009C6C88 /* ItemsTableViewController.swift in Sources */,
+				AB62B59A1C2849F400D3DBE5 /* CustomNavigationAnimationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
