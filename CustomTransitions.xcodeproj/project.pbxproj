@@ -17,6 +17,7 @@
 		AB62B5961C243BA100D3DBE5 /* CustomPresentAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB62B5951C243BA100D3DBE5 /* CustomPresentAnimationController.swift */; };
 		AB62B5981C28404800D3DBE5 /* CustomDismissAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB62B5971C28404800D3DBE5 /* CustomDismissAnimationController.swift */; };
 		AB62B59A1C2849F400D3DBE5 /* CustomNavigationAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB62B5991C2849F400D3DBE5 /* CustomNavigationAnimationController.swift */; };
+		AB62B59C1C29303900D3DBE5 /* CustomInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB62B59B1C29303900D3DBE5 /* CustomInteractionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		AB62B5951C243BA100D3DBE5 /* CustomPresentAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentAnimationController.swift; sourceTree = "<group>"; };
 		AB62B5971C28404800D3DBE5 /* CustomDismissAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDismissAnimationController.swift; sourceTree = "<group>"; };
 		AB62B5991C2849F400D3DBE5 /* CustomNavigationAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationAnimationController.swift; sourceTree = "<group>"; };
+		AB62B59B1C29303900D3DBE5 /* CustomInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomInteractionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				AB62B5951C243BA100D3DBE5 /* CustomPresentAnimationController.swift */,
 				AB62B5971C28404800D3DBE5 /* CustomDismissAnimationController.swift */,
 				AB62B5991C2849F400D3DBE5 /* CustomNavigationAnimationController.swift */,
+				AB62B59B1C29303900D3DBE5 /* CustomInteractionController.swift */,
 			);
 			path = CustomTransitions;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB62B59C1C29303900D3DBE5 /* CustomInteractionController.swift in Sources */,
 				5FF2AD7D1AA467630092F66C /* ActionViewController.swift in Sources */,
 				AB62B5981C28404800D3DBE5 /* CustomDismissAnimationController.swift in Sources */,
 				AB62B5961C243BA100D3DBE5 /* CustomPresentAnimationController.swift in Sources */,

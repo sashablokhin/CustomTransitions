@@ -13,6 +13,7 @@ class ItemsTableViewController: UITableViewController, UIViewControllerTransitio
     let customPresentAnimationController = CustomPresentAnimationController()
     let customDismissAnimationController = CustomDismissAnimationController()
     let customNavigationAnimationController = CustomNavigationAnimationController()
+    let customInteractionController = CustomInteractionController()
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showAction" {
@@ -30,8 +31,17 @@ class ItemsTableViewController: UITableViewController, UIViewControllerTransitio
     }
     
     func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        if operation == .Push {
+            customInteractionController.attachToViewController(toVC)
+        }
+        
         customNavigationAnimationController.reverse = operation == .Pop
         return customNavigationAnimationController
+    }
+
+    func navigationController(navigationController: UINavigationController, interactionControllerForAnimationController animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        return customInteractionController.transitionInProgress ? customInteractionController : nil
     }
     
     override func viewDidLoad() {
