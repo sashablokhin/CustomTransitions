@@ -29,6 +29,8 @@ class CustomNavigationAnimationController: NSObject, UIViewControllerAnimatedTra
         
         var viewFromTransform: CATransform3D = CATransform3DMakeRotation(direction * CGFloat(M_PI_2), 0.0, 1.0, 0.0)
         var viewToTransform: CATransform3D = CATransform3DMakeRotation(-direction * CGFloat(M_PI_2), 0.0, 1.0, 0.0)
+        
+        // Add the perspective
         viewFromTransform.m34 = const
         viewToTransform.m34 = const
         
